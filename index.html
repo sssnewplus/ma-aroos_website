@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ma'aroos Fresh Poultry Products</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- header section -->
+  <header class="site-header">
+    <div class="local-container nav-row">
+      <!-- brand logo -->
+      <a class="brand" href="#">Ma'aroosPoultry</a>
+      <!-- collabsible navs -->
+      <nav class="main-nav" id="main-nav">
+        <a href="#home">Home</a>
+        <a href="#day-old-chicks-grid">Day-Old</a>
+        <a href="#grown-chicks-grid">Chickens</a>
+        <a href="#medicine-grid">Medicines</a>
+        <a href="#feeds-grid">Feeds</a>
+        <a href="#feeders-grid">Feeders</a>
+        <a href="#drinkers-grid">Drinkers</a>
+        <a href="#services">Services</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+
+      </nav>
+      <div class="actions">
+        <!-- cart button with badge -->
+        <button class="cart-btn" id="open-cart">
+          <i style="color: #2f8f4b;" class="fa-solid fa-cart-shopping"></i>
+          <span class="cart-count" id="cart-count">0</span>
+        </button>
+        <!-- menu toggle for mobile -->
+        <button class="menu-toggle" id="menu-toggle" aria-label="Open menu">☰</button>
+      </div>
+    </div>
+  </header>
+  
+  <!-- main section -->
+  <main>
+    
+    <!-- home section -->
+    <section id="home" class="hero">
+      <div class="hero-inner local-container">
+        <h1>Sustainable Poultry Solutions</h1>
+        <p>Your Trusted Partner in Poultry Farming</p>
+        <div>
+          <a class="btn" href="#products">Explore Products</a>
+          <a class="btn btn-outline" href="#about">Learn more</a>
+        </div>
+      </div>
+    </section>
+    
+    <!-- about section -->
+    <section id="about" class="section local-container">
+      <div class="about-grid">
+        <div>
+          <h2 class="local-h">Locally grown with care</h2>
+          <p class="local-p">We provide high quality poultry products, breeds, feeds, medicines, and equipments tailored for rearers, farmers and retailers.</p>
+          <ul class="features">
+            <li class="local-p"> 🐓 Poultry Feeds: starter, grower, finisher, layer mash and others.</li>
+            <li class="local-p"> 💊 Poultry Medicines: vitamins, vaccines, antibiotics.</li>
+            <li class="local-p"> 🐓 Poultry Breeds: broilers, layers, maja, cockerels and day-old chickens of various kinds.</li>
+            <li class="local-p"> ⚙️ Poultry Equipments: drinkers and feeders.</li>
+            <li class="local-p"> 🥚 chicken Eggs.</li>
+          </ul>
+        </div>
+        <div class="about-image" aria-hidden="true"></div>
+      </div>
+    </section>
+    
+    <!-- products section -->
+    <section id="products" class="section local-container">
+      <h2 class="local-h">Products</h2>
+      <p class="local-p">Fresh picks, order one by one per piece. Add items to your cart and checkout online.</p>
+      <br>
+
+      <h3 class="local-h">Day Old Chickens</h3>
+      <div id="day-old-chicks-grid" class="products-grid">
+        <!-- list of day old chicks -->
+      </div>
+      <br>
+
+      <h3 class="local-h">Grown Chickens</h3>
+      <div id="grown-chicks-grid" class="products-grid">
+        <!-- list of grown chicks -->
+      </div>
+      <br>
+
+      <h3 class="local-h">Poultry Feeds</h3>
+       <div id="feeds-grid" class="products-grid">
+        <!-- list of feeds -->
+      </div>
+      <br>
+      
+      <h3 class="local-h">Chicken Eggs</h3>
+      <div id="eggs-grid" class="products-grid">
+        <!-- list of feeders -->
+      </div>
+      <br>
+
+      <h3 class="local-h">Medicines & Vaccines</h3>
+       <div id="medicine-grid" class="products-grid">
+        <!-- list of poultry medicines -->
+      </div>
+      <br>
+
+      <h3 class="local-h">Feeders</h3>
+      <div id="feeders-grid" class="products-grid">
+        <!-- list of feeders -->
+      </div>
+      <br>
+
+      <h3 class="local-h">Drinkers</h3>
+      <div id="drinkers-grid" class="products-grid">
+        <!-- list of drinkers -->
+      </div>
+    </section>
+
+    <section id="services" class="section local-container">
+      <div class="container">
+        <h2 class="local-h">Our Services</h2>
+        <div class="services-grid">
+          <div class="service muted">Delivery &amp; pickup</div>
+          <div class="service muted">Bulk wholesales</div>
+          <div class="service muted">Consultation &amp; assisstant</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="testimonials" class="section local-container">
+      <h2 class="local-h">Testimonials</h2>
+      <div class="testimonials-grid">
+        <blockquote class="testimonials-grid-item local-p">
+          “Amazing products, always fresh and flavorful. Delivery is prompt.”
+          <cite>by umar farouq</cite>
+        </blockquote>
+        <blockquote class="testimonials-grid-item local-p">
+          “Great for my business, consistent quality and reliable supply.”
+          <cite>by Zainab Goron Dutse</cite>
+        </blockquote>
+      </div>
+    </section>
+
+    <!-- <section id="blog" class="section local-container">
+      <h2>From the farm</h2>
+      <div class="blog-grid">
+        <article>
+          <h3>Growing for the season</h3>
+          <p class="muted">Tips on seasonal crops and storage.</p>
+        </article>
+        <article>
+          <h3>Farm-to-table recipes</h3>
+          <p class="muted">Simple ways to enjoy fresh produce.</p>
+        </article>
+      </div>
+    </section> -->
+
+    <section id="contact" class="section local-container">
+      <h2 class="local-h">Contact Us</h2>
+      <div class="submit-btn-container">
+        <form class="contact-form" onsubmit="event.preventDefault(); alert('This demo form does not submit. Replace with your backend.');">
+        <input required placeholder="Enter your name" name="name"/>
+        <input required placeholder="Enter your email" name="email" type="email"/>
+        <textarea placeholder="Enter your message" required name="message"></textarea>
+        <div class="submit-btn-container">
+          <button class="btn" type="submit">Send</button>
+        </div>
+      </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- footer section -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <h4><strong>Ma'aroos</strong></h4>
+        <p>Fresh produce from local farms. Deliveries across town.</p>
+      </div>
+      <div>
+        <h4>Quick links</h4>
+        <nav class="quick-links-nav">
+          <a href="#day-old-chicks-grid">Day-Old</a>
+          <a href="#grown-chicks-grid">Chickens</a>
+          <a href="#medicine-grid">Medicines</a>
+          <a href="#feeds-grid">Feeds</a>
+          <a href="#feeders-grid">Feeders</a>
+          <a href="#drinkers-grid">Drinkers</a>
+          <a href="#services">Services</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+      <div>
+        <h4>Subscribe</h4>
+        <form class="subscribe-form" onsubmit="event.preventDefault(); alert('Thank you — this is a demo.');">
+          <input placeholder="Your email" required />
+          <button class="btn btn-small" type="submit">Subscribe</button>
+        </form>
+      </div>
+    </div>
+    <br/>
+    <div class="container copyright">© <span id="year"></span> Ma'aroos — all rights reserved.</div>
+  </footer>
+
+  <!-- Cart modal -->
+  <div id="cart-modal" class="cart-modal" aria-hidden="true">
+    <div class="cart-panel">
+      <button id="close-cart" class="close">✕</button>
+      <h3>Your cart</h3>
+      <div id="cart-items"></div>
+      <div class="cart-footer">
+        <div class="cart-total">Total: $<span id="cart-total">0.00</span></div>
+        <div class="cart-actions">
+          <button id="clear-cart" class="btn btn-outline" style="background-color: red;">Clear</button>
+          <button id="checkout" class="btn">Proceed to checkout</button>
+        </div>
+      </divz
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>

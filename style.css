@@ -1,0 +1,342 @@
+:root {
+  --accent: #2f8f4b;
+  --accent-2: #1f5f33;
+  --muted: #67707a;
+  --bg: #f7faf6;
+  --card: #ffffff;
+  --radius: 12px;
+  --max-width: 1100px;
+}
+
+/* universal preset */
+* {
+  box-sizing:border-box;
+}
+html, body {
+  height:100%;
+  margin: 0;
+  font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+  font-size:16px;
+  color:#0b1a12;
+  background:var(--bg);
+}
+
+/* reusable */
+.local-container {
+  max-width:var(--max-width);
+  margin:0 auto;
+  padding:1rem;
+}
+.section {
+  padding:3rem 1rem;
+}
+.btn {
+  display:inline-block;
+  background:var(--accent);
+  color:white;
+  padding:0.6rem 1rem;
+  border-radius:10px;
+  text-decoration:none;
+  border:0;
+}
+.btn-outline {
+  background:transparent;
+  border:1px solid rgba(255,255,255,0.6);
+  color: white;
+  background-color: transparent;
+}
+.local-p {
+  color: var(--muted);
+  font-size: 1.1rem;
+}
+.local-h {
+  color: var(--accent);
+}
+.muted {
+  color:var(--muted);
+  font-size: 1rem;
+}
+
+/* header */
+.site-header { 
+  background:white;
+  box-shadow:0 1px 8px rgba(10,10,10,0.04);
+  position:fixed;
+  top:0;z-index:50;
+  width: 100%;
+}
+.nav-row { 
+  display:flex;
+  align-items:center;
+  gap:1rem;
+  justify-content:space-between;
+}
+.nav-open {
+  display: flex;
+  flex-direction: row;
+}
+.brand { 
+  font-weight:700;
+  color:var(--accent);
+  text-decoration:none;
+  font-size:1.125rem;
+}
+.main-nav {
+  display:flex;
+  gap:1rem;
+}
+.main-nav a {
+  color:#234; 
+  text-decoration:none
+}
+.menu-toggle {
+  display:none;
+  background:none;
+  border:0;
+  font-size:1.25rem
+}
+.cart-btn {
+  background:transparent;
+  border:1px solid var(--accent);
+  padding:0.35rem 0.6rem;
+  border-radius:8px;
+}
+
+/* hero => home section */
+.hero {
+  background-image:linear-gradient(rgba(16,27,15,0.35),rgba(16,27,15,0.35)), url('static/images/hero.jpg');
+  background-size:cover;
+  background-position:center;
+  color:white;
+  padding:4rem 1rem;
+}
+.hero-inner {
+  padding:3rem 0;
+}
+.hero h1 {
+  font-size:2rem;
+  margin:0 0 0.5rem;
+}
+
+/* about section */
+.about-grid {
+  display:grid;
+  grid-template-columns:1fr 420px;
+  gap:2rem;
+  align-items:center;
+}
+.about-image {
+  height:240px;
+  background-image:url('static/images/about.jpg');
+  background-size:cover;
+  background-position:center;
+  border-radius:12px;
+}
+.features {
+  list-style: none;
+  margin: 0 0 20px 0;
+  padding: 0;
+}
+.features li {
+  margin: 10px;
+}
+
+/* products section */
+.products-grid {
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:1rem;
+  margin-top:1rem;
+}
+.product-card {
+  background:var(--card);
+  padding:1rem;
+  border-radius:12px;
+  box-shadow:0 6px 18px rgba(16,24,20,0.04);
+  display:flex;
+  flex-direction:column;
+}
+.product-card img {
+  width:100%;
+  height:160px;
+  object-fit:cover;
+  border-radius:8px;
+}
+.product-meta {
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  margin-top:0.6rem;
+}
+
+/* services section */
+.services-grid {
+  display:flex;
+  gap:1rem;
+  justify-content: center;
+}
+.service {
+  background:white;
+  padding:1rem;
+  border-radius:10px;
+  flex:1;
+  text-align:center;
+}
+
+/* testimonials section */
+.testimonials-grid {
+  display: flex;
+  gap: 0.1rem;
+  /* flex-flow: colullll */
+}
+.testimonials-grid-item {
+  background:white;
+  padding:1rem;
+  margin: 10px;
+  border-radius:10px;
+  flex:1;
+}
+cite {
+  color: var(--accent);
+}
+
+/* .blog-grid {
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:1rem
+} */
+.contact-form {
+  display: flex;
+  gap: 1rem;
+  width: 100%;
+}
+.contact-form input, .contact-form textarea {
+  color: var(--muted);
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  width: 100%;
+}
+.submit-btn-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.site-footer {
+  background:#f1f6ef;
+  padding: 2rem 2rem;
+  margin-top: 1.8rem
+}
+.footer-grid {
+  display: flex;
+  justify-content: center;
+  /* flex-direction: column; */
+  gap: 1rem;
+}
+.footer-grid div {
+  margin: 0;
+  padding: 5px;
+  /* background-color: white; */
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  border-radius: 8px;
+  align-content: center;
+  justify-content: start;
+}
+.footer-grid div h4 {
+  margin: 0 0 5px 0;
+  padding: 0;
+  color: var(--accent);
+}
+.footer-grid div p, .footer-grid div nav, .footer-grid div form {
+  margin: 0;
+  padding: 0;
+  color: var(--muted);
+}
+.quick-links-nav {
+  display: flex;
+  flex-direction: column;
+}
+.quick-links-nav a {
+  text-decoration: underline;
+  margin-bottom: 2px;
+  color: var(--muted);
+}
+.subscribe-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: center;
+}
+.subscribe-form input {
+  border: none;
+  color: var(--muted);
+  border-radius: 8px;
+  padding: 10px;
+  width: 100px;
+}
+.subscribe-form button {
+  width: 80px;
+}
+.copyright {
+  color: var(--muted);
+  text-align: center;
+}
+.cart-modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(6,8,6,0.35);
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+.cart-modal[aria-hidden="false"] {
+  display: flex;
+}
+.cart-panel {
+  background: white;
+  border-radius: 12px;
+  padding: 1rem;
+  max-width: 520px;
+  width: 92%;
+  box-shadow: 0 10px 40px rgba(10,20,10,0.2)
+}
+.cart-panel .close {
+  background: none;
+  border: 0;
+  font-size: 1.25rem;
+  float: right
+}
+.cart-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem
+}
+.cart-actions button {
+  margin-left: 0.5rem
+}
+@media (max-width:900px){
+  .about-grid {
+    grid-template-columns:1fr
+  }
+  .products-grid {
+    grid-template-columns:repeat(2,1fr)
+  }
+  .main-nav {
+    display:none
+  }
+  .menu-toggle {
+    display:inline-block
+  }
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+  }
+}
+@media (max-width:520px){
+  .products-grid{grid-template-columns:1fr}
+}
