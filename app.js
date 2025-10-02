@@ -45,7 +45,7 @@ const drinkers = [
 const feeders = [
   { id: 'f1', name: 'Super Feeder', price: 1000, unit: '1 Piece', img: 'https://images.unsplash.com/photo-1602016753527-f48d14de3cd7?auto=format&fit=crop&w=800&q=60' },
   { id: 'f2', name: 'Tray Feeder', price: 1000, unit: '1 Piece', img: 'https://images.unsplash.com/photo-1625745454310-9de2c4f2740d?auto=format&fit=crop&w=800&q=60' },
-  { id: 'f3', name: 'Flip-Top Feeder', price: 1000, unit: '1 Set', img: 'https://images.unsplash.com/photo-1559563458-527698bf5295?auto=format&fit=crop&w=800&q=60' }
+  { id: 'f3', name: 'Flip-Top Feeder', price: 1000, unit: '1 Set', img: 'https://images.unsplash.com/photo-1559563458-527698bf529uto=format&fit=crop&w=800&q=60' }
 ];
 
 const medics = [
