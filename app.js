@@ -128,14 +128,19 @@ function updateCartUI(){
     row.style.display='flex';
     row.style.justifyContent='space-between';
     row.style.marginBottom='0.5rem';
-    row.innerHTML = `<div>${p.name} × ${q}</div><div>$${(p.price*q).toFixed(2)}</div>`;
+    row.innerHTML = `<div>${p.name} × ${q}</div><div>&#8358;${(p.price*q).toFixed(2)}</div>`;
     cartItems.appendChild(row);
     total += p.price*q;
   }
   cartTotal.textContent = total.toFixed(2);
 }
 
-function addToCart(id){ cart[id] = (cart[id]||0)+1; saveCart(); updateCartUI(); }
+function addToCart(id){ 
+  cart[id] = (cart[id]||0)+1; 
+  alert(`cart updated`)
+  saveCart(); 
+  updateCartUI();
+}
 function clearCart(){ cart = {}; saveCart(); updateCartUI(); }
 
 // events
